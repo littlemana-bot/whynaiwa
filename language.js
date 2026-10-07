@@ -11,13 +11,16 @@
     const node = [...element.childNodes].find(n => n.nodeType === Node.TEXT_NODE && n.textContent.trim());
     if (node) translations.push({ element: node, chinese: node.textContent, english });
   };
-  const headings = ['What is this?', 'What is Naiwa?', 'Why people love Naiwa', 'A few final thoughts'];
-  const ids = ['intro', 'about', 'love', 'afterword'];
+  const headings = ['What is this?', 'What is Naiwa?', 'Why people love Naiwa', 'A few final thoughts', 'Take a Naiwa home'];
+  const ids = ['intro', 'about', 'love', 'afterword', 'take-home'];
   ids.forEach((id, i) => {
     bind(`#${id} h2`, headings[i]);
     bind(`.toc a[href="#${id}"]`, headings[i]);
   });
   const paragraphs = {
+    'take-home': [
+      'If there are extras in the basket, feel free to take a Naiwa home! (That’s why I print extras in the first place—who wouldn’t want one of these little yellow creatures in their room? (◍´꒳`◍)) Just leave at least one of each design behind, please. They’d love to stick around for photos with more people, too.'
+    ],
     intro: [
       'Meet Naiwa, a popular character from Chinese meme culture. All the figures here are 3D printed. A big thank-you to the creators who share their models with the community.',
       'New designs and restocks drop from time to time. (I’m still job hunting—how does everyone else have an offer while I’m sitting at zero? Life as a mechanical engineering grad is tough (╥ω╥`))'
