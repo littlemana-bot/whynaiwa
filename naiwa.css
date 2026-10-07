@@ -1,6 +1,12 @@
 /* Four-section reading preview, using the existing site's visual tokens. */
 .page { grid-template-columns: 190px minmax(0, 780px); max-width: 1120px; }
-.topbar { grid-template-columns: 250px minmax(220px, 620px) 1fr; }
+.topbar { grid-template-columns: 220px minmax(160px, 1fr) auto; }
+.language-toggle { justify-self:end; min-height:42px; padding:8px 12px; border:1px solid var(--color-rule); border-radius:4px; background:var(--color-surface); color:var(--color-ink); cursor:pointer; white-space:nowrap; }
+.language-toggle [lang="zh-CN"] { font-weight:700; }
+html[lang="en"] .language-toggle [lang="zh-CN"] { font-weight:400; }
+html[lang="en"] .language-toggle [lang="en"] { font-weight:700; }
+html[lang="en"] .toc nav a { white-space:normal; }
+html[lang="en"] .article p { line-height:1.8; }
 .article-header { padding-bottom: 30px; }
 h1 { font-size: clamp(40px, 6vw, 64px); }
 .article p { line-height: 1.95; }
