@@ -5,7 +5,13 @@
       <span class="sr-only">搜索本页</span>
       <input id="pageSearch" type="search" placeholder="搜索这篇文章" autocomplete="off" />
     </label>
-    <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch to English"><span lang="zh-CN">中文</span><span aria-hidden="true"> / </span><span lang="en">EN</span></button>
+    <div class="language-control">
+      <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch to English"><span lang="zh-CN">中文</span><span aria-hidden="true"> / </span><span lang="en">EN</span></button>
+      <div class="language-hint" id="languageHint" role="note" hidden>
+        <p><span lang="zh-CN">可以在这里切换语言</span><span lang="en">Switch languages here</span></p>
+        <button id="dismissLanguageHint" type="button"><span lang="zh-CN">知道了</span> / <span lang="en">Got it</span></button>
+      </div>
+    </div>
   </header><main class="page" id="top"><aside class="toc" aria-label="本页目录"><p class="rail-label">本页目录</p><nav><a href="#intro" class="is-current">这是什么？</a><a href="#about">什么是奶蛙？</a><a href="#love">为什么大家喜欢奶蛙</a><a href="#afterword">写在后面</a></nav></aside><article class="article" id="article"><header class="article-header"><h1>奶蛙</h1><div class="status-row"><button class="plain-button" id="copyLink" type="button">复制页面链接</button></div></header><section id="intro" data-search-section><div class="section-title"><span>01</span><h2>这是什么？</h2></div><p>这是奶蛙，是一个十分流行的中国meme形象。这里的所有奶蛙形象都由3D打印制作而成，感谢所有的开源模型者们。</p>
 <p>不定期补货/上新（最近仍然在找工作中，为啥大家都有offer了而我还是0offer，学机械怎么就这么难捏(╥ω╥`) ）</p>
 <img class="printed-collection" src="assets/naiwa-printed-collection.jpg" alt="摆放在石台上的黄色奶蛙、奶鲨和袋鼠3D打印摆件，旁边的收纳盒写着请拿一个" width="960" height="1400" />

@@ -91,6 +91,19 @@
   bind('footer b', 'Why Naiwa');
   bind('footer > a', 'Back to top ↑');
   const toggle = document.querySelector('#languageToggle');
+  const hint = document.querySelector('#languageHint');
+  const hintStorageKey = 'whynaiwa-language-hint-dismissed';
+  let hintDismissed = false;
+  try { hintDismissed = localStorage.getItem(hintStorageKey) === '1'; } catch { /* Still show the hint when storage is unavailable. */ }
+  hint.hidden = hintDismissed;
+  const dismissHint = () => {
+    hint.hidden = true;
+    try { localStorage.setItem(hintStorageKey, '1'); } catch { /* Dismiss for this visit when storage is unavailable. */ }
+  };
+  document.querySelector('#dismissLanguageHint').addEventListener('click', dismissHint);
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !hint.hidden) dismissHint();
+  });
   const chineseDescription = document.querySelector('meta[name="description"]').content;
   const chineseTitle = document.title;
   let language = 'zh';
@@ -118,5 +131,8 @@
   let saved;
   try { saved = localStorage.getItem('whynaiwa-language'); } catch { /* Default to Chinese. */ }
   apply(requested || saved || 'zh');
-  toggle.addEventListener('click', () => apply(language === 'en' ? 'zh' : 'en'));
+  toggle.addEventListener('click', () => {
+    dismissHint();
+    apply(language === 'en' ? 'zh' : 'en');
+  });
 })();
