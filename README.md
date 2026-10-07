@@ -4,7 +4,7 @@
 
 ## 页面
 
-入口为 `index.html`，自动跳转到 `encyclopedia.html`。正文包括：
+入口为 `index.html`，自动跳转到 `naiwa.html`。正文包括：
 
 1. 这是什么？
 2. 什么是奶蛙？
@@ -21,11 +21,11 @@
 python -m http.server 4174 --bind 127.0.0.1
 ```
 
-访问 http://127.0.0.1:4174/encyclopedia.html 。也可使用其他静态文件服务器。
+访问 http://127.0.0.1:4174/naiwa.html 。也可使用其他静态文件服务器。
 
 ## 文件
 
-- `encyclopedia.html`：当前主页面。
+- `naiwa.html`：当前主页面。
 - `research.css`、`naiwa.css`：页面样式。
 - `research.js`：本页搜索、目录与复制链接。
 - `assets/`：图片资源。
