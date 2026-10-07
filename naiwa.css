@@ -9,7 +9,10 @@ section { scroll-margin-top: 90px; padding-block: 40px; }
 .model-list { margin-top: 26px; border-top: 1px solid var(--color-rule); }
 .printed-collection { display:block; width:min(480px,100%); height:auto; margin:28px 0 0; border-radius:4px; }
 .model-link { display: block; padding: 16px 0; border-bottom: 1px solid var(--color-rule); line-height: 1.8; text-decoration: none; }
-.model-link span { display: block; color: var(--color-muted); font-size: 12px; }
+.model-link.has-image { display:grid; grid-template-columns:minmax(0,1fr) 120px; gap:20px; align-items:center; }
+.model-link .model-copy { display:block; color:var(--color-link); font-size:15px; }
+.model-link .model-meta, .model-link > span:not(.model-copy) { display:block; color:var(--color-muted); font-size:12px; }
+.model-thumb { display:block; width:120px; height:90px; object-fit:cover; border:1px solid var(--color-rule); border-radius:4px; }
 footer { grid-template-columns: 1fr auto; }
 .follow-account { padding-top: 28px; }
 .account-details strong, .account-details span { display:block; }
@@ -17,4 +20,4 @@ footer { grid-template-columns: 1fr auto; }
 .account-image { display:block; width:min(300px,100%); margin-top:20px; }
 .account-image img { display:block; width:100%; height:auto; border:1px solid var(--color-rule); border-radius:6px; }
 .article .account-hint { color:var(--color-muted); font:12px/1.8 var(--font-ui); }
-@media (max-width:760px) { .topbar { grid-template-columns:1fr auto; } .page { display:block; } .toc { margin-bottom:24px; } section { scroll-margin-top:130px; } }
+@media (max-width:760px) { .topbar { grid-template-columns:1fr auto; } .page { display:block; } .toc { margin-bottom:24px; } section { scroll-margin-top:130px; } .model-link.has-image { grid-template-columns:minmax(0,1fr) 96px; gap:12px; } .model-thumb { width:96px; height:76px; } }
