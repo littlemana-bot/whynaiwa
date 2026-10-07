@@ -87,6 +87,7 @@
   bind('.account-image', 'Open the account card and QR code at full size', 'aria-label');
   bind('.account-image img', 'Tony’s Xiaohongshu account card, ID 63655461578, with a QR code.', 'alt');
   bind('.account-hint', 'Scan the QR code or search for the account ID in Xiaohongshu. Click the image to enlarge it.');
+  bind('.contact-email > span', 'Email: ');
   bind('#noResults', 'No matches on this page. Try another keyword.');
   bind('footer b', 'Why Naiwa');
   bind('footer > a', 'Back to top ↑');
