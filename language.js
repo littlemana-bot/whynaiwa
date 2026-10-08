@@ -74,8 +74,8 @@
   bind('h1', 'Naiwa');
   bind('#copyLink', 'Copy page link');
   bind('#intro h3', 'Meet the figures');
-  const modelNames = ['Peace-sign Naiwa', 'Nai-Shark', 'Nai-Mouse', 'Special guest: the Meituan “Mouse”'];
-  const modelCredits = ['By renke233 · View the original model ↗', 'By 奶者战神 · View the original model ↗', 'By 墨肠Dmc · View the original model ↗', 'By 墨肠Dmc · View the original model ↗'];
+  const modelNames = ['Peace-sign Naiwa', 'Nai-Shark', 'Nai-Mouse', 'Nai-Rock', 'Special guest: the Meituan “Mouse”'];
+  const modelCredits = ['By renke233 · View the original model ↗', 'By 奶者战神 · View the original model ↗', 'By 墨肠Dmc · View the original model ↗', 'Made by me · View the original model ↗', 'By 墨肠Dmc · View the original model ↗'];
   document.querySelectorAll('.model-link').forEach((element, i) => {
     bindFirstText(element.querySelector('.model-copy') || element, modelNames[i]);
     const credit = element.querySelector('.model-meta') || element.querySelector('span');
@@ -84,6 +84,7 @@
   bind('.printed-collection', 'Yellow 3D-printed Naiwa, shark, and kangaroo figures beside a box with a “Feel free to take one” sign.', 'alt');
   bind('img[src="assets/biye-naiwa.jpg"]', 'A 3D-printed peace-sign Naiwa on an outdoor stone ledge.', 'alt');
   bind('img[src="assets/meituan-shushu.jpg"]', 'A yellow 3D-printed Meituan mascot sitting on a wall-mounted switch.', 'alt');
+  bind('img[src="assets/nai-shi.jpg"]', 'A yellow, green-eyed 3D-printed Nai-Rock beside a real stone with googly eyes on a tiled ledge.', 'alt');
   bind('.follow-account', 'Follow me on Xiaohongshu', 'aria-label');
   bind('.follow-account > p:first-child', 'If you’re interested in these little creations, 3D printing, or what I’m up to, come follow me on Xiaohongshu (RED). I share projects and bits of everyday life whenever I get the chance.');
   bind('.account-details span', 'Xiaohongshu ID: 63655461578');
