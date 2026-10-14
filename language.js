@@ -86,6 +86,7 @@
   bind('.art-trio img', 'A Naiwa version of The Milkmaid on the left, a white armless Naiwa Venus figurine in the center, and a Naiwa version of The Gleaners on the right.', 'alt');
   bind('.art-trio figcaption', 'Left: The Naiwa Milkmaid. Center: the armless Naiwa Venus. Right: The Naiwa Gleaners.');
   bind('img[src="assets/biye-naiwa.jpg"]', 'A 3D-printed peace-sign Naiwa on an outdoor stone ledge.', 'alt');
+  bind('img[src="assets/nai-shark.png"]', 'A yellow, green-eyed Nai-Shark figurine resting on an open palm.', 'alt');
   bind('img[src="assets/meituan-shushu.jpg"]', 'A yellow 3D-printed Meituan mascot sitting on a wall-mounted switch.', 'alt');
   bind('img[src="assets/nai-shi.jpg"]', 'A yellow, green-eyed 3D-printed Nai-Rock beside a real stone with googly eyes on a tiled ledge.', 'alt');
   bind('.follow-account', 'Follow me on Xiaohongshu', 'aria-label');
